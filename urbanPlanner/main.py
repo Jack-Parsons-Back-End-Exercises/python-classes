@@ -19,14 +19,4 @@ nashville = City("Nashville", "John Cooper")
 for building in buildingsList:
     nashville.add_building(building)
 
-for building in nashville.buildings:
-    print("BUILDING REPORT")
-    print("")
-    print(f'Address: {building.address}')
-    print(f'Stories: {building.stories}')
-    print(f'Year Constructed: {building.date_constructed.tm_year}')
-    print(f'Owner: {building.owner}')
-    print(f'Designer: {building.designer}')
-    print("")
-    print("***********************************")
-    print("")
+nashville.generate_city_report()
